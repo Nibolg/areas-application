@@ -92,7 +92,7 @@
                     <td>{{$area['lat']}}</td>
                     <td>{{$area['long']}}</td>
                 @else
-                    <td>{{$area['distance']}}</td>
+                    <td>{{number_format($area['distance'], 3, '.', '')}}</td>
                 @endif
             </tr>
         @endforeach
